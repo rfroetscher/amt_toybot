@@ -37,6 +37,8 @@ Steps to install:
 * Install node js
 * `cd ~ && git clone https://github.com/rfroetscher/amt_toybot.git`
 * `cd amt_toybot && npm install`
+* `touch .env`
+* Add "DATA_DIR=/var/www/acemonstertoys.org/assets/data/" to .env
 
 ### Starting
 Ensure it is not already running:
