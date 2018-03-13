@@ -11,9 +11,9 @@ assetWhitelist = fs.readdirSync(process.env.DATA_DIR).filter (assetFile) ->
 
 logDateTime = ->
   dateObj = new Date();
-  month = dateObj.getUTCMonth() + 1;
-  day = dateObj.getUTCDate();
-  year = dateObj.getUTCFullYear();
+  month = dateObj.getMonth() + 1;
+  day = dateObj.getDate();
+  year = dateObj.getFullYear();
   hour = dateObj.getHours();
   minute = dateObj.getMinutes();
 
