@@ -19,8 +19,9 @@ You will need to set your `DATA_DIR` environment variable to a directory. The fi
 Add your data dir to it like :
 
 ```
-DATA_DIR=/home/rob/workspace/data
+DATA_DIR=/home/rob/workspace/data/
 ```
+(notice ending backslash)
 
 You can start toybot locally by running:
 
