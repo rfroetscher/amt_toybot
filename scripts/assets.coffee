@@ -4,7 +4,7 @@ env = require('node-env-file');
 env(__dirname + '/../.env');
 
 assetWhitelist = fs.readdirSync(process.env.DATA_DIR).filter (assetFile) ->
-  !assetFile.includes('.log')
+  assetFile.includes('AMT') && !assetFile.includes('.log')
 
 logDateTime = ->
   dateObj = new Date();
