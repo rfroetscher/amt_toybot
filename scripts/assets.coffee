@@ -19,6 +19,7 @@ logDateTime = ->
 
 module.exports = (robot) ->
 
+
   # Asset status
   robot.hear /!asset \s*(\S+)$/i, (res) ->
     assetTag = res.match[1];
@@ -37,7 +38,6 @@ module.exports = (robot) ->
 
     if assetWhitelist.includes(assetTag)
       res.send "#{res.message.user.name}: Updating asset '#{assetTag}' to '#{status}'"
-
 
       logMessage = "#{status} [#{res.message.user.name} @ #{logDateTime()}]\n"
 
